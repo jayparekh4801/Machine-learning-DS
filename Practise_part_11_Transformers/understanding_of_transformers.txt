@@ -1,0 +1,30 @@
+Why transformers are better than RNNs or LSTM?
+1) LSTM and RNNs are slow to train.
+2) they feeds word sequentially. whereas transformers supports concurrency.
+3) Relation between word of long seqences vanishes in RNNs. whereas in Transformers because of self-attention layer it perform well
+in long sequences.
+
+Transformers :- Transformers are combination of encoders and decoders. if we use Transformers for translating one language into 
+another then endcoder part is used to understand the source language and decoder part is used to understad the how source language
+is related to destination language.
+
+encoders :- endcoders have multi-headed-attention layer followed by forward-feed layer. 
+decoders ;- decoders have masked-multi-headed-self-attention layers followed by multi-headed-attention followed by forward pass
+layer and lastly linear.
+
+BERT(Bidirectional Encoder Representation From Transformer) :- Architecture of BERT is stacked encoders. more than one encoders are connected one after another to achieve BERT 
+architecture. 
+
+-> BERT is trained in 2 parts 1) pretraining 2) fine-tuning
+
+1) Pretraining :- pretraining is done by Masked Language Modeling(MLM) and Next Sentence Prediction(NSP)
+* in masked language modeling some words of sentence are masked which BERT will predict. (kind of fill in the blanks)
+* in NSP BERT will output binary that first sentence is relevant to next or not. if yes then outputs 1 oterwise outputs 0.
+
+2) Fine-Tuning :- 
+
+
+Transformer and Autoencoder are different, HOW ?
+
+Autoencoder :- autoencodera are used to compress, or minimize the input dataset and reconstruct real input again. it is mainly done
+by encoder hiddern layer and decoder. 
